@@ -1,4 +1,4 @@
-## \. Experiment Setting
+##  Experiment Setting
 
 The experiments are carried out on a server equipped with an Intel Xeon Platinum 8352V CPU @ 2.10GHz, featuring 16 vCPUs and 120GB of memory. The GPU used is an NVIDIA RTX 4090 with 24GB VRAM. The algorithms are implemented using PyTorch 2.5.1 and Python 3.12, with GPU acceleration supported by CUDA 12.4. The operating system is Ubuntu 22.04.
 
@@ -51,7 +51,7 @@ pip install learn2learn
 
 ### Running Experiments
 
-(1) FC100 dataset
+FC100 dataset
 
 ```bash
 python -u F2BAfc.py
@@ -59,14 +59,14 @@ python -u IFSBA2fc.py
 python -u qNBOfc.py
 ```
 
-(2) miniImageNet dataset
+miniImageNet dataset
 
 ```bash
 python -u qNBOmini.py
 python -u pzobo.py
 ```
 
-(3) Medical few-shot experiments
+Medical few-shot experiments
 
 ```bash
 python -u meta_f2ba_medical.py
@@ -80,4 +80,9 @@ python -u meta_f2ba_medical.py
 python -u plotmini.py
 python -u plotmini_fc100.py
 ```
+### Acknowledgement
+
+The meta-learning experiments in this repository are partially built upon the implementation from:
+
+https://github.com/sowmaster/esjacobians
 
